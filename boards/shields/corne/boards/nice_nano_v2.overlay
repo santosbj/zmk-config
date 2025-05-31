@@ -1,0 +1,19 @@
+&i2c1 {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
+    sda-pin = <0x1b>;  // P0.27
+    scl-pin = <0x1c>;  // P0.28
+
+    ssd1306: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <64>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        inversion = "false";
+        flip-x = "false";
+        flip-y = "true";
+    };
+};

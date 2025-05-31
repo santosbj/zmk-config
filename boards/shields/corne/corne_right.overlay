@@ -1,0 +1,5 @@
+/ {
+    bt_peripheral {
+        compatible = "zmk,ble-peripheral";
+    };
+};

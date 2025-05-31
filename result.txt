@@ -1,0 +1,13 @@
+.
+├── boards
+│   └── shields
+├── build.yaml
+├── config
+│   ├── corne.conf
+│   ├── corne.keymap
+│   └── west.yml
+├── result.txt
+└── zephyr
+    └── module.yml
+
+5 directories, 6 files
