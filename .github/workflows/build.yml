@@ -1,5 +1,4 @@
 name: Build ZMK firmware for Corne Wireless
-
 on:
   push:
     branches:
