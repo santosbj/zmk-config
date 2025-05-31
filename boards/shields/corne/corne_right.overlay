@@ -1,5 +1,18 @@
-/ {
-    bt_peripheral {
-        compatible = "zmk,ble-peripheral";
-    };
+&display {
+    compatible = "solomon,ssd1306fb";
+    reg = <0x3c>;
+    width = <128>;
+    height = <64>;
+    segment-offset = <0>;
+    page-offset = <0>;
+    display-inverted;
+    power-supply = <&vdd>;
+    reset-gpios = <&gpio0 18 (GPIO_ACTIVE_LOW)>;
+};
+
+&rgbled {
+    compatible = "adafruit,neopixel";
+    chain-length = <12>; // o el número real de LEDs
+    color-order = <RGB>;
+    label = "RGBLED";
 };
