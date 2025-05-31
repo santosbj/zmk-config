@@ -2,7 +2,7 @@ name: Build ZMK firmware for Corne Wireless
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
 
 jobs:
